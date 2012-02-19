@@ -10,7 +10,7 @@ class S2JSPlugin (val global:Global) extends Plugin {
 	val description = "Scala-to-Javascript compiler plugin"
 	
 	// options
-	var output = "."
+	var output = "target/generated-sources"
 	
 	val components = List[PluginComponent](new S2JSComponent(global, this))
 	
